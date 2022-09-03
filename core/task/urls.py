@@ -1,7 +1,9 @@
 from django.urls import path
-from .views import LoginDetail
+from .views import LoginView
 
-app_name = "task"
+# app_name = "task"
 urlpatterns = [
-    path("", LoginDetail.as_view(), name = "createLoginView")
+    path('', LoginView.as_view(), name = "createLoginView"),
+    
+    #crar mas url pathbase = /api/
 ]
