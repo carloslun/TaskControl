@@ -5,9 +5,9 @@ from django.contrib.auth.models import UserManager
 
 # Create your models here.
 class User(AbstractUser):
-    is_administrador=models.BooleanField(default=False)
-    is_disenadorprocesos=models.BooleanField(default=False)
-    is_funcionario=models.BooleanField(default=False)
+    is_usermain = models.BooleanField(default=False)
+    is_disenadorprocesos = models.BooleanField(default=False)
+    is_funcionario = models.BooleanField(default=False)
 
     def get_administrador_rol(self):
         admin_rol = None
