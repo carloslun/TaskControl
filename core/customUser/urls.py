@@ -1,8 +1,8 @@
 from django.urls import path
-#from .views import LoginView
+from .views import UserView
 
-#urlpatterns = [
-#    path('', LoginView.as_view(), name = "createLoginView"),
+urlpatterns = [
+    path('', UserView.as_view(), name = "ListCreateUser"),
     
-#    #crear mas url pathbase = /api/
-#]
+    #crear mas url pathbase = /api/
+]
